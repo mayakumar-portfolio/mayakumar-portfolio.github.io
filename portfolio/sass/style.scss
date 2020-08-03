@@ -278,7 +278,7 @@ img {
   margin-bottom: 1.735vh;
   margin-left: 6.6rem;
   padding-left: 1rem;
-  //padding-right: 4rem;
+  padding-right: 4rem;
   padding-bottom: 1rem;
 
   color: black;
@@ -478,12 +478,19 @@ hr{
   }
 
   .font-header2{
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-left: 5rem;
   }
 
   .font-subheader2{
     font-size: 0.6rem;
     letter-spacing: 0.4rem;
+    margin-left: 5.4rem;
+  }
+
+  .body-text-info{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
 }
