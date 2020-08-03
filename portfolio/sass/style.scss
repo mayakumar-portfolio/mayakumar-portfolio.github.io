@@ -2,7 +2,8 @@
 
 $green: #91B28C; 
 $yellow: #F9A45C;
-$blue: #9ECBE0;
+$blue: #C2003B;
+$red: #9ECBE0;
 $orange: #F98759;
 
 html {
@@ -18,6 +19,7 @@ html {
 body{
 margin: 0;
 padding: 0; 
+//background-color: #161616;
 }
 
 //menu bar
@@ -36,7 +38,7 @@ padding: 0;
      right: -3.33vw;
      display: flex;
      justify-content: center;
-     padding-top: 0.6rem;
+     padding-top: 0.9vh;
      
     
      height: 2.25rem;
@@ -49,9 +51,9 @@ padding: 0;
      font-weight: 400;
      text-transform: uppercase;
      letter-spacing: 0.1vw;
-     font-size: 0.9vw;
+     font-size: 1.5vw;
      color: transparent;
-     border-radius:  5px 0 0 5px ;
+     //border-radius:  5px 0 0 5px ;
    }
 
    
@@ -62,13 +64,13 @@ padding: 0;
    
    #artwork {
      top: 0rem;
-     background-color: $green;
+     background-color: $blue;
     
    }
    
    #about {
      top: 2.5rem;
-     background-color: $yellow;
+     background-color: $blue;
      
    }
    
@@ -131,7 +133,7 @@ padding: 0;
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: black;
+    background-color: white;
   }
   
   .image-container:hover .overlay {
@@ -152,7 +154,7 @@ padding: 0;
     
     text-decoration: none;
     font-size: 1.3rem;
-    color: white;
+    color: $blue;
     font-family: 'futura-pt';
     font-weight: 400;
     text-transform: uppercase;
@@ -176,7 +178,7 @@ padding: 0;
     
     text-decoration: none;
     font-size: 0.7rem;
-    color: grey;
+    color: white;
     font-family: 'futura-pt', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -185,11 +187,8 @@ padding: 0;
 
 
 
-//image formating
+//document formating
 
-.row{
-
-}
 
 .col-xs-12 {
     padding: 0;
@@ -228,7 +227,7 @@ img {
     padding-left: 1rem;
     padding-right: 4rem;
 
-    color: #FF9800;
+    color: $blue;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: 200;
@@ -240,7 +239,7 @@ img {
 .font-subheader{
     display: flex;
     justify-content: left;
-    margin-bottom: 1.735rem;
+    margin-bottom: 2rem;
     margin-left: 1.35rem;
     padding-left: 1rem;
 
@@ -255,7 +254,6 @@ img {
 }
 
 
-
 //
 
 .font-header2 {
@@ -266,7 +264,7 @@ img {
   padding-left: 1rem;
   padding-right: 4rem;
 
-  color: #FF9800;
+  color: $blue;
   font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
   font-weight: 200;
@@ -278,7 +276,7 @@ img {
   display: flex;
   justify-content: left;
   margin-bottom: 1.735vh;
-  margin-left: 6.2rem;
+  margin-left: 6.6rem;
   padding-left: 1rem;
   //padding-right: 4rem;
   padding-bottom: 1rem;
@@ -374,6 +372,79 @@ img {
   
 }
 
+// contact page
+
+.bgbox{
+  background-color: cadetblue;
+}
+
+.phrase1 {
+
+padding: 2rem;
+
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 200;
+font-size: 1.2rem;
+line-height: 2rem;
+
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: capitalize;
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.phrase2{
+  
+  padding-top: 2rem;
+
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 2rem;
+line-height: 1.25rem;
+/* identical to box height, or 62% */
+
+text-align: center;
+letter-spacing: 0.1rem;
+text-transform: uppercase;
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.phrase3{
+
+  padding-bottom: 1rem;
+
+
+  font-family: 'Futura pt';
+font-style: normal;
+font-weight: 200;
+font-size: 1rem;
+line-height: 1rem;
+/* or 125% */
+
+text-align: center;
+letter-spacing: 0.1em;
+font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.phrase4{
+
+  margin-bottom: 2rem;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+}
+
 //decorations
 
 .profile-photo{
@@ -381,12 +452,38 @@ img {
   justify-content: center;
   height: auto;
   width: 20rem;
-  border-radius:  5px 5px 5px 5px ;
   
 }
 
+hr{
+  width: 75%;
+  border: 2px solid white;
+}
 
-//
-/* For desktop: */
+.instagram{
 
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 
+  height: 3rem;
+  width: 3rem;
+
+}
+
+// media quary 
+
+@media screen and (max-width: 700px) {
+  #mySidenav a {
+    font-size: 1.7vw;
+  }
+
+  .font-header2{
+    font-size: 2rem;
+  }
+
+  .font-subheader2{
+    font-size: 0.6rem;
+    letter-spacing: 0.4rem;
+  }
+
+}
