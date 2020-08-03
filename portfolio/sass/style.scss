@@ -1,13 +1,16 @@
 * {box-sizing: border-box;}
 
+
 $green: #91B28C; 
 $yellow: #F9A45C;
-$blue: #C2003B;
-$red: #9ECBE0;
 $orange: #F98759;
 
+$blue: #9ECBE0;
+$white: white;
+$black: #161616;
+
 html {
-    background-color: white;
+    background-color: $black;
     overflow: scroll;
     overflow-x: hidden;
     }
@@ -21,6 +24,70 @@ margin: 0;
 padding: 0; 
 //background-color: #161616;
 }
+
+//menu bar mobile
+
+.button{
+	  background-color:$blue;
+    border: 2px solid $blue;
+    height:100%;
+    width: 100%;
+    padding:1rem;
+}
+
+.button-position{
+    position:fixed;
+	  transition: .5s ease;
+    right: 1rem;
+    top: 1rem;
+    display:none;
+
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($blue,0.9);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#menu-mobile-text{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  text-align: center;
+  font-size: 2rem;
+  
+  
+ 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  a{
+    text-decoration: none;
+    color: $black;
+    line-height: 4rem;
+  }
+
+  a:hover{
+    color: $white;
+  }
+
+}
+
 
 //menu bar
 
@@ -133,7 +200,7 @@ padding: 0;
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: white;
+    background-color: $black;
   }
   
   .image-container:hover .overlay {
@@ -243,7 +310,7 @@ img {
     margin-left: 1.35rem;
     padding-left: 1rem;
 
-    color: black;
+    color: $white;
     font-family: 'futura-pt';
     font-size: 1rem;
     line-height: 1.2rem;
@@ -281,7 +348,7 @@ img {
   padding-right: 4rem;
   padding-bottom: 1rem;
 
-  color: black;
+  color: $white;
   font-family: 'futura-pt';
   font-size: 1rem;
   line-height: 1.2rem;
@@ -307,7 +374,7 @@ img {
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    color: black;
+    color: $white;
     font-family: 'futura-pt';
     font-size: 0.5rem;
     letter-spacing: 0.05rem;
@@ -327,7 +394,7 @@ img {
   //margin-left: 15rem;  
   //margin-right: 15rem;
 
-  color: black;
+  color: $white;
   font-family: 'futura-pt';
   font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
   font-size: 1rem;
@@ -360,7 +427,7 @@ img {
     padding-top: 3vh;
     padding-bottom: 3rem;
 
-  color: black;
+  color: $white;
   font-family: 'futura-pt';
   font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
   font-size: 1rem;
@@ -480,7 +547,8 @@ hr{
   .font-header2{
     font-size: 2.2rem;
     margin-left: 5rem;
-  }
+
+}
 
   .font-subheader2{
     font-size: 0.6rem;
@@ -493,4 +561,15 @@ hr{
     padding-right: 4rem;
   }
 
+  .sidenav{
+    display: none;
+  }
+
+  .button-position{
+   display: block;
+  }
+
+  
+
 }
+
