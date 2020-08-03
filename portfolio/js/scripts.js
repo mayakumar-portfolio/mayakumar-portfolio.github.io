@@ -2,8 +2,8 @@
 // colour changing navigation bar to white
 
 
-var top1 = $('#title').offset().top;
-var top2 = $('#content').offset().top;
+var top1 = $('#title1').offset().top;
+var top2 = $('#content1').offset().top;
 
 $(document).scroll(function() {
   var scrollPos = $(document).scrollTop();
@@ -36,6 +36,7 @@ $(document).scroll(function() {
     } 
   
 });
+
 
 //mobile menu
 
