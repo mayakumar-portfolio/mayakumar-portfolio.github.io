@@ -34,6 +34,13 @@ $(document).scroll(function() {
   if (scrollPos <= top2) {
       $('#archive').css('background-color', '#9ECBE0');
     } 
+
+  if (scrollPos >= top1) {
+      $('#white').css('background-color', 'white');
+    } 
+  if (scrollPos <= top2) {
+      $('#white').css('background-color', '#9ECBE0');
+    } 
   
 });
 
