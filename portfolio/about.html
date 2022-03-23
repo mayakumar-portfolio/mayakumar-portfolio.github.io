@@ -26,29 +26,41 @@
 
 <body>
 
-    <div id="overlay" onclick="off()">
-        <div id="menu-mobile-text">
-            <a href="artwork.html">Artwork</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-            
-    </div>
-          
-    <div class="button-position">       
-        <button class="button" onclick="on()"></button>
-    </div>
+   <!--mobile navigation-->
 
-<div class="menu-box">
-
-    <div id="mySidenav" class="sidenav">
-        <a href="artwork.html" id="artwork" class="">Artwork</a>
-        <a href="about.html" id="about">About</a>
-        <a href="contact.html" id="contact">Contact</a>
-    </div>
-
-
+<div class="button-position" onclick="on()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
 </div>
+
+<div id="overlay" onclick="off()">
+    <div class="button-position" onclick="on()">
+        <div class="bar1-overlay"></div>
+        <div class="bar2-overlay"></div>
+        <div class="bar3-overlay"></div>
+    </div>
+    <div id="menu-mobile-text">
+        <a href="artwork.html">Design</a>
+        <a href="photography.html">Artwork</a>
+        <a href="about.html">About</a>
+    </div>     
+</div>
+
+<!--desktop navigation-->
+
+<div class="container-fluid" id="content">
+    <div id="mySidenav" class="sidenav">
+        <div class="navigation-box">
+            <div class="row">
+                <a href="artwork.html">Design</a>
+                <a href="photography.html">Artwork</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -58,7 +70,7 @@
     <div class="row">
         <div class="col-xs-12"> 
             
-            <div class="font-header2"> About</div>
+            <div class="font-header2">About</div>
           
         </div>
         <div class="col-xs-12"> 
@@ -85,6 +97,12 @@
                 <p class="subhead-about">Maya is a graphic designer based in Canada. </p>
                 <p>I discovered my passion for graphic design when I was 13 and since then, I’ve been playing with shapes, textures and colours. Currently, I attend the University of Victoria where I study visual art and computer science. Prior to entering the program, I spent a year at York University in their bachelor of design program. While at York, I took studio courses in typography, visual communication, UX design, drawing and form. Having been familiar with the software prior to university, I can now confidently say that I am well versed in numerous Adobe applications such as InDesign, Illustrator and Photoshop. I am constantly exploring new styles and techniques inspired by digital & physical artwork to ensure that I am pushing myself as a designer. Ultimately, I strive to create sophisticated designs that are both visually engaging and functional.</p>
             </div>
+</div>
+
+<div class="col-xs-12">            
+    <div class="body-text">
+        <p class="contact-info-about">Email: 10maya100@gmail.com</p>
+    </div>
 </div>
 
 <div class="container-fluid spacer-bar"></div>

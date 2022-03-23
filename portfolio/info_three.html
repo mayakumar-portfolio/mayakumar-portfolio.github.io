@@ -26,18 +26,40 @@
 
 <body class="stick-page">
 
-    <div id="overlay" onclick="off()">
-        <div id="menu-mobile-text">
-            <a href="artwork.html">Artwork</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+<!--mobile navigation-->
+
+<div class="button-position" onclick="on()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+<div id="overlay" onclick="off()">
+    <div class="button-position" onclick="on()">
+        <div class="bar1-overlay"></div>
+        <div class="bar2-overlay"></div>
+        <div class="bar3-overlay"></div>
+    </div>
+    <div id="menu-mobile-text">
+        <a href="artwork.html">Design</a>
+        <a href="photography.html">Artwork</a>
+        <a href="about.html">About</a>
+    </div>     
+</div>
+
+<!--desktop navigation-->
+
+<div class="container-fluid" id="content">
+    <div id="mySidenav" class="sidenav">
+        <div class="navigation-box">
+            <div class="row">
+                <a href="artwork.html">Design</a>
+                <a href="photography.html">Artwork</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
-            
     </div>
-          
-    <div class="button-position">       
-        <button class="button" onclick="on()"></button>
-    </div>
+</div>
 
 
 <a href="artwork.html" class="back-button">
@@ -45,16 +67,6 @@
         <img src="images/BackButtonHover.svg" class="img-top" alt="Card Front">
 </a>
 
-<div class="menu-box">
-
-    <div id="mySidenav" class="sidenav">
-        <a href="artwork.html" id="artwork" class="">Artwork</a>
-        <a href="about.html" id="about">About</a>
-        <a href="contact.html" id="contact">Contact</a>
-    </div>
-
-
-</div>
 
 
 <div class="container-fluid" id="title">

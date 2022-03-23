@@ -56,13 +56,4 @@ function off() {
 }
 
 
-//hover on menu box
-
-
-  
-    //alert('Button 1 was clicked') 
-
-
-
-
-
+// change shape of popup menu icon and X for mobile devices
